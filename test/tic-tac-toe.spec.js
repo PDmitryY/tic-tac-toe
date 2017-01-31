@@ -6,39 +6,30 @@ describe('TicTacToe', () => {
             let game;
 
             game = new TicTacToe();
-            console.log("0", game.getCurrentPlayerSymbol());
             expect(game.getCurrentPlayerSymbol()).to.equal('x')
 
             game.nextTurn(0, 1);
-            console.log("1", game.getCurrentPlayerSymbol());
             expect(game.getCurrentPlayerSymbol()).to.equal('o')
 
             game.nextTurn(1, 2);
-            console.log("2", game.getCurrentPlayerSymbol());
             expect(game.getCurrentPlayerSymbol()).to.equal('x')
 
             game.nextTurn(0, 2);
-            console.log("3", game.getCurrentPlayerSymbol());
             expect(game.getCurrentPlayerSymbol()).to.equal('o')
 
             game.nextTurn(0, 0);
-            console.log("4", game.getCurrentPlayerSymbol());
             expect(game.getCurrentPlayerSymbol()).to.equal('x')
 
             game.nextTurn(1, 1);
-            console.log("5", game.getCurrentPlayerSymbol());
             expect(game.getCurrentPlayerSymbol()).to.equal('o')
 
             game.nextTurn(0, 0);
-            console.log("6", game.getCurrentPlayerSymbol());           expect(game.getCurrentPlayerSymbol()).to.equal('o')
             expect(game.getCurrentPlayerSymbol()).to.equal('o')
 
             game.nextTurn(1, 1);
-            console.log("7", game.getCurrentPlayerSymbol()); 
             expect(game.getCurrentPlayerSymbol()).to.equal('o')
 
-            game.nextTurn(2, 1);
-            console.log("8", game.getCurrentPlayerSymbol()); 
+            game.nextTurn(2, 1); 
             expect(game.getCurrentPlayerSymbol()).to.equal('x')
 
             game.nextTurn(0, 1)

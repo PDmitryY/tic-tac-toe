@@ -8,7 +8,7 @@ class TicTacToe {
         this.rowIndex = 0;
         this.columnIndex = 0;
         this.board = [[null, null, null], [null, null, null], [null, null, null]];
-        this.value = null;
+        this.counter = 0;
         }
 
     getCurrentPlayerSymbol() {
@@ -28,7 +28,8 @@ class TicTacToe {
                 this.currentPlayer = this.player2;
             } else {
                 this.currentPlayer = this.player1;
-            };
+            }
+            this.counter++;
         }
     }
 
@@ -41,11 +42,13 @@ class TicTacToe {
     }
 
     noMoreTurns() {
-
+        if (this.counter === 9) {
+            return true;
+        } else return false;
     }
 
     isDraw() {
-
+        
     }
 
     getFieldValue(rowIndex, columnIndex) {
