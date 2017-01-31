@@ -2197,47 +2197,63 @@ describe('TicTacToe', () => {
         });
     });
     describe('#getWinner', () => {
-        it('should return winner of the game or null', () => {
+        it.only('should return winner of the game or null', () => {
             let game;
 
             game = new TicTacToe();
             game.nextTurn(1, 0)
+            console.log("1", game.getCurrentPlayerSymbol())
             expect(game.getWinner()).to.equal(null)
 
             game.nextTurn(1, 2)
+            console.log("2", game.getCurrentPlayerSymbol())
             expect(game.getWinner()).to.equal(null)
 
             game.nextTurn(2, 1)
+            console.log("3", game.getCurrentPlayerSymbol())
             expect(game.getWinner()).to.equal(null)
 
             game.nextTurn(1, 2)
+            console.log("4", game.getCurrentPlayerSymbol())
             expect(game.getWinner()).to.equal(null)
 
             game.nextTurn(1, 1)
+            console.log("5", game.getCurrentPlayerSymbol())
             expect(game.getWinner()).to.equal(null)
 
             game.nextTurn(0, 1)
+            console.log("6", game.getCurrentPlayerSymbol())
             expect(game.getWinner()).to.equal(null)
 
             game.nextTurn(2, 0)
+            console.log("7", game.getCurrentPlayerSymbol())
             expect(game.getWinner()).to.equal(null)
 
             game.nextTurn(0, 1)
+            console.log("8", game.getCurrentPlayerSymbol())
             expect(game.getWinner()).to.equal(null)
 
             game.nextTurn(2, 2)
+            console.log("9", game.getCurrentPlayerSymbol())
             expect(game.getWinner()).to.equal(null)
 
             game.nextTurn(0, 1)
+            console.log("10", game.getCurrentPlayerSymbol())
             expect(game.getWinner()).to.equal(null)
 
             game.nextTurn(1, 1)
+            console.log("11", game.getCurrentPlayerSymbol())
             expect(game.getWinner()).to.equal(null)
 
             game.nextTurn(2, 0)
+            console.log("12", game.getCurrentPlayerSymbol())
             expect(game.getWinner()).to.equal(null)
 
+            
             game.nextTurn(0, 2)
+            console.log("13", game.getCurrentPlayerSymbol())
+            console.log(game.board);
+            console.log("winner", game.getWinner());
             expect(game.getWinner()).to.equal('o')
 
 
