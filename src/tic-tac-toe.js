@@ -40,37 +40,37 @@ class TicTacToe {
     }
 
     getWinner() {
-        if (this.board[0][0] === this.board[1][0] === this.board[2][0] === 'x'){
+        if (this.board[0][0] === 'x' && this.board[1][0] === 'x' && this.board[2][0] === 'x'){
             return 'x';
-        } else if (this.board[0][1] === this.board[1][1] === this.board[2][1] === 'x'){
+        } else if (this.board[0][1] === 'x' && this.board[1][1] === 'x' && this.board[2][1] === 'x'){
             return 'x';
-        } else if (this.board[0][2] === this.board[1][2] === this.board[2][2] === 'x'){
+        } else if (this.board[0][2] === 'x' && this.board[1][2] === 'x' && this.board[2][2] === 'x'){
             return 'x';
-        } else if (this.board[0][0] === this.board[0][1] === this.board[0][2] === 'x'){
+        } else if (this.board[0][0] === 'x' && this.board[0][1] === 'x' && this.board[0][2] === 'x'){
             return 'x';
-        } else if (this.board[1][0] === this.board[1][1] === this.board[1][2] === 'x'){
+        } else if (this.board[1][0] === 'x' && this.board[1][1] === 'x' && this.board[1][2] === 'x'){
             return 'x';
-        } else if (this.board[2][0] === this.board[2][1] === this.board[2][2] === 'x'){
+        } else if (this.board[2][0] === 'x' && this.board[2][1] === 'x' && this.board[2][2] === 'x'){
             return 'x';
-        } else if (this.board[0][0] === this.board[1][1] === this.board[2][2] === 'x'){
+        } else if (this.board[0][0] === 'x' && this.board[1][1] === 'x' && this.board[2][2] === 'x'){
             return 'x';
-        } else if (this.board[0][2] === this.board[1][1] === this.board[2][0] === 'x'){
+        } else if (this.board[0][2] === 'x' && this.board[1][1] === 'x' && this.board[2][0] === 'x'){
             return 'x';
-        } else if (this.board[0][0] === this.board[1][0] === this.board[2][0] === 'o'){
+        } else if (this.board[0][0] === 'o' && this.board[1][0] === 'o' && this.board[2][0] === 'o'){
             return 'o';
-        } else if (this.board[0][1] === this.board[1][1] === this.board[2][1] === 'o'){
+        } else if (this.board[0][1] === 'o' && this.board[1][1] === 'o' && this.board[2][1] === 'o'){
             return 'o';
-        } else if (this.board[0][2] === this.board[1][2] === this.board[2][2] === 'o'){
+        } else if (this.board[0][2] === 'o' && this.board[1][2] === 'o' && this.board[2][2] === 'o'){
             return 'o';
-        } else if (this.board[0][0] === this.board[0][1] === this.board[0][2] === 'o'){
+        } else if (this.board[0][0] === 'o' && this.board[0][1] === 'o' && this.board[0][2] === 'o'){
             return 'o';
-        } else if (this.board[1][0] === this.board[1][1] === this.board[1][2] === 'o'){
+        } else if (this.board[1][0] === 'o' && this.board[1][1] === 'o' && this.board[1][2] === 'o'){
             return 'o';
-        } else if (this.board[2][0] === this.board[2][1] === this.board[2][2] === 'o'){
+        } else if (this.board[2][0] === 'o' && this.board[2][1] === 'o' && this.board[2][2] === 'o'){
             return 'o';
-        } else if (this.board[0][0] === this.board[1][1] === this.board[2][2] === 'o'){
+        } else if (this.board[0][0] === 'o' && this.board[1][1] === 'o' && this.board[2][2] === 'o'){
             return 'o';
-        } else if (this.board[0][2] === this.board[1][1] === this.board[2][0] === 'o'){
+        } else if (this.board[0][2] === 'o' && this.board[1][1] === 'o' && this.board[2][0] === 'o'){
             return 'o';
         } else return null;
     }
